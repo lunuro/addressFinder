@@ -16,5 +16,9 @@
         <members>getAddress</members>
         <name>NamedCredential</name>
     </types>
+    <types>
+        <members>Account.UpdateAddress</members>
+        <name>QuickAction</name>
+    </types>
     <version>55.0</version>
 </Package>
