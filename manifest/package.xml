@@ -5,6 +5,10 @@
         <name>ApexClass</name>
     </types>
     <types>
+        <members>getAddressKey</members>
+        <name>CustomLabel</name>
+    </types>
+    <types>
         <members>getAddress</members>
         <name>NamedCredential</name>
     </types>
