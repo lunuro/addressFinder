@@ -1,0 +1,21 @@
+<template>
+    <lightning-quick-action-panel header="Search Address" class="slds-modal_large">
+        <div>
+            <lightning-input name="searchAddress" label="Search address using postcode (Press enter to search)"
+                placeholder="Postcode" is-loading={searchLoad} value={postCode} onchange={handleChangeSearch}
+                type="search" required="true" onkeypress={handleEnter}></lightning-input>
+        </div>
+        <div class="divOptions">
+            <template if:true={showAddress}>
+                <lightning-combobox name="address" label="Address Options" value={selAddress}
+                    placeholder="Select an address" options={optAddress} onchange={handleChangeAddress}
+                    onopen={handleOpenOptions} required="true"></lightning-combobox>
+            </template>
+        </div>
+        <div slot="footer">
+            <lightning-button label="Cancel" onclick={handleCancel} variant="brand"></lightning-button>
+            <lightning-button label="Save" onclick={handleSave} variant="brand"
+                class="slds-p-left_x-small"></lightning-button>
+        </div>
+    </lightning-quick-action-panel>
+</template>
