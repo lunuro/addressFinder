@@ -4,5 +4,9 @@
         <members>AddressFinderREST</members>
         <name>ApexClass</name>
     </types>
+    <types>
+        <members>getAddress</members>
+        <name>NamedCredential</name>
+    </types>
     <version>55.0</version>
 </Package>
