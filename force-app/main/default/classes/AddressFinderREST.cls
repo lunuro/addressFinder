@@ -43,7 +43,7 @@ public with sharing class AddressFinderREST {
             }
             return resFinder;
         } catch (Exception exc) {
-            resFinder = exc.getMessage();
+            resFinder = 'Error: ' + exc.getMessage();
             return resFinder;
         }
     }
