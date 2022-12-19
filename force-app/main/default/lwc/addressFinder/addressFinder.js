@@ -179,9 +179,10 @@ export default class addressFinder extends LightningElement {
         this.dispatchEvent(new CloseActionScreenEvent());
       })
       .catch((error) => {
+        let errMess = !error.body ? error.message : error.body.message;
         this.generateToast(
           "Error while updating the address",
-          "Please contact your admin for help. Error: " + error.message,
+          "Please contact your admin for help. Error: " + errMess,
           "error"
         );
       });
