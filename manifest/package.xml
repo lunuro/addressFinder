@@ -9,6 +9,10 @@
         <name>CustomLabel</name>
     </types>
     <types>
+        <members>Account-Account Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
         <members>addressFinder</members>
         <name>LightningComponentBundle</name>
     </types>
